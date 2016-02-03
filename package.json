@@ -1,0 +1,23 @@
+{
+  "name": "udp_server",
+  "version": "0.0.1",
+  "description": "Streaming UDP server",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "keywords": [
+    "UDP",
+    "server",
+    "streams"
+  ],
+  "author": "Hans Skjerpen",
+  "license": "ISC",
+  "dependencies": {
+    "readable-stream": "^2.0.5"
+  },
+  "devDependencies": {
+    "isstream": "^0.1.2",
+    "tape": "^4.4.0"
+  }
+}
