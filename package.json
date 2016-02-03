@@ -1,6 +1,10 @@
 {
   "name": "udp2stream",
   "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Operacy/udp2stream"
+  },
   "description": "Streaming UDP server",
   "main": "index.js",
   "scripts": {
