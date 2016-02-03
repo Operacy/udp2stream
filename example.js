@@ -25,7 +25,7 @@ var tracker = {
 }
 
 //var server = udp_server({address: '192.168.0.109', port: 51233 })
-var server = udp_server({port: 51233})
+var server = udp_server.listen({port: 51233})
 
 server
   .pipe(tracker.parse)

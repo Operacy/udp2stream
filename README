@@ -14,7 +14,7 @@ info about the remote client, and a reply function.
       next()
     })
 
-    var server = udp_server({port: 1234})
+    var server = udp_server.listen({port: 1234})
 
     server
     .pipe(reply_to_request)
@@ -31,3 +31,10 @@ info about the remote client, and a reply function.
     }, 10000)
 
 ### API
+
+#### udp_server.listen(options)
+* options.port: udp_port to bind to
+* options.address: udp_address to bind to
+
+#### udp_server.close()
+Stop listening, close server.

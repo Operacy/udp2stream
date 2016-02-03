@@ -7,7 +7,7 @@ var udp_server = require('../index.js')
 var config = { port: 1234 }
 
 var client = dgram.createSocket('udp4')
-var server = udp_server({port: config.port})
+var server = udp_server.listen({port: config.port})
 
 // Test server setup
 test('udp_server setup', function (t) {
@@ -55,5 +55,5 @@ test('udp_server receiving', function (t) {
 test.onFinish(function () {
   console.log('All done')
   // CLose stream and socket.
-  server.close()
+  udp_server.close()
 })

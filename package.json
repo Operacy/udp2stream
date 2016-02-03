@@ -1,6 +1,6 @@
 {
-  "name": "udp_server",
-  "version": "0.0.1",
+  "name": "udp2stream",
+  "version": "0.0.2",
   "description": "Streaming UDP server",
   "main": "index.js",
   "scripts": {
