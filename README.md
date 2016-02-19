@@ -4,7 +4,7 @@ Sets up a simple udp receiver which pushes received udp messages
 onto a readstream as objects containing the received message,
 info about the remote client, and a reply function.
 
-    var udp_server = require('./index.js')
+    var udp_server = require('udp2stream')
     var through2 = require('through2')
 
     var reply_to_request = through2.obj(function (udp, _, next) {
