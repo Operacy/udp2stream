@@ -30,10 +30,8 @@ module.exports = {
           client: rinfo
         },
         reply: function (message, callback) {
-          var client = dgram.createSocket(options.type || 'udp4')
-          client.send(message, 0, message.length, rinfo.port, rinfo.address, function (err) {
+          socket.send(message, 0, message.length, rinfo.port, rinfo.address, function (err) {
             if (err && callback) callback(err)
-            client.close()
           })
         }
       })
